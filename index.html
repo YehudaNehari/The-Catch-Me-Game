@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <img src="images/tom.png" alt="image" id="left" />
+      <img src="images/images.png" alt="image" id="right" />
+    </div>
+
+    <div id="clear"></div>
+    <div class="g1">CATCH ME IF YOU CAN !</div>
+    <div class="g2" onclick="start()">START THE GAME</div>
+    <div id="clickToStart"></div>
+
+    <div id="blackScreen" onclick="badClick()">
+      <div id="click" onclick="catch_click()">Click me:)</div>
+    </div>
+    <div id="playAg" onclick="play2()">PLAY AGAIN</div>
+    <table class="table">
+      <tr>
+        <th>Score</th>
+        <th>Points to Next Level</th>
+        <th>Level</th>
+        <th>Missed Clicks</th>
+        <th>Timer</th>
+        <th>High Scores</th>
+      </tr>
+      <tr>
+        <td id="score">00</td>
+        <td id="clickTo">0</td>
+        <td id="level">0</td>
+        <td id="missedClicks">0</td>
+        <td id="time_html">0</td>
+
+       <td>
+        <div id="le">
+          
+        </div>
+       </td>
+        
+      </tr>
+    </table>
+   
+   
+
+
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

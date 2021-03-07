@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  background-color: rgb(184, 163, 48);
+}
+#clickToStart {
+  background-color: #d8a71f;
+  width: 50%;
+  height: 36px;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 36px;
+  font-size: 40px;
+  font-style: oblique;
+}
+
+.g2 {
+  display: none;
+}
+.g1 {
+  background-color: #adcde9;
+  color: #e62019;
+  width: 50%;
+  height: 36px;
+  margin: auto;
+  text-align: center;
+  /*vertical-align: middle;*/
+  /*line-height: 36px;*/
+  font-size: 30px;
+  font-style: oblique;
+}
+.g1:hover {
+  display: none;
+}
+.g1:hover + .g2 {
+  display: block;
+  background-color: #9cc4e7;
+  color: #0d5f23;
+  width: 50%;
+  height: 36px;
+  margin: auto;
+  text-align: center;
+  /*vertical-align: middle;*/
+  line-height: 36px;
+  font-size: 40px;
+  font-style: oblique;
+}
+
+#right {
+  float: right;
+  padding-top: 50px;
+  width: 450px;
+  height: 400px;
+}
+#left {
+  float: left;
+  width: 387px;
+  padding-top: 62px;
+}
+
+#blackScreen {
+  background-color: black;
+  height: 400px;
+  margin: auto;
+  width: 768px;
+  position: relative;
+}
+#click {
+  background-color: #fff;
+  width: 80px;
+  font-size: 110%;
+  position: absolute;
+}
+
+#playAg {
+  text-align: center;
+  background-color: red;
+  width: 268px;
+  margin: auto;
+  height: 50px;
+  line-height: 49px;
+  font-size: 36px;
+  color: rgb(184, 163, 48);
+  display: none;
+}
+.table {
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 10px;
+}
+ul {
+  list-style-type: none;
+}
+#le {
+  text-align: left;
+}
+#wi {
+  width: 308px;
+}
+.table th,
+td {
+  border: 1px solid;
+  padding: 0px 6px;
+}
+
+.table th {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+}
+.table td {
+  text-align: center;
+  font-weight: 900;
+  background-color: rgb(22, 21, 22);
+  color: white;
+}
+
+#colo {
+  color: #f0120b;
+}
+.e {
+  position: relative;
+  border-bottom: 1px dotted black;
+}
+.e .date {
+  visibility: hidden;
+  width: 100px;
+  height: 40px;
+  background-color: blanchedalmond;
+  color: black;
+  text-align: center;
+  border-radius: 1px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  top: -5px;
+  left: 105%;
+}
+
+.e:hover .date {
+  visibility: visible;
+}
+
+@media screen and (max-width: 812px) {
+  #blackScreen {
+    width: 100%;
+  }
+  #left {
+    display: none;
+  }
+  #right {
+    display: none;
+  }
+  #gameName {
+    width: 100%;
+  }
+  #clickToStart {
+    width: 100%;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
