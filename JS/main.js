@@ -41,8 +41,10 @@ function catch_click() {
   if (clickStart == true) {
     countClicks++;
     clickWork = true; // לחצתי על קליק!
-    scoreToH += 10 * level;
-    score.innerHTML = scoreToH;
+  
+      scoreToH += 10 * level;
+      score.innerHTML = scoreToH;
+    
     levelHT.innerHTML = level;
     clickToNextL.innerHTML = 10 - countClicks;
     if (countClicks == 10) {
@@ -63,8 +65,9 @@ function catch_click() {
   }
 }
 function badClick() {
-  if (clickStart == true && clickWork == false) {
+  if (clickStart == true && clickWork == false && scoreToH >0) {
     // תיכנס רק אם קליק לא פעיל
+    
     scoreToH -= 1 * level;
     score.innerHTML = scoreToH;
     misse++;
