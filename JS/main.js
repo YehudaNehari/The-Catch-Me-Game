@@ -21,6 +21,16 @@ var my_players = [];
 var found = false;
 var timeDate = "";
 displayPlayers();
+
+//const src ="https://www.gravatar.com/avatar/2f2eaccac43433e0bdd0b9f795286423?s=32&d=identicon&r=PG&f=1";
+
+//const docStyle = document.body.style;
+//document.querySelector('#blackScreen').addEventListener('mouseover', () => {
+ // if (!docStyle.cursor) docStyle.cursor = `url('https://www.clipartmax.com/png/middle/133-1334105_tom-and-jerry-png-tom-and-jerry-png.png')`;
+ // else docStyle.cursor = null;
+//});
+
+
 function start() {
   clickStart = true;
   yourName = prompt("Whats your Name ?");
@@ -64,6 +74,7 @@ function catch_click() {
     }
   }
 }
+
 function badClick() {
   if (clickStart == true && clickWork == false && scoreToH >0) {
     // תיכנס רק אם קליק לא פעיל

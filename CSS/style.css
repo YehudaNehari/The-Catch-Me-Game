@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: rgb(184, 163, 48);
+  cursor: url(../images/pic2.png), pointer;
 }
 #clickToStart {
   background-color: #d8a71f;
@@ -66,14 +67,22 @@ body {
   position: relative;
 }
 #click {
- 
-  text-align: center;
-  background-color: #fff;
+  background-image: url(../images/small-tom.png);
+  background-size: contain;
+  width: 50px;
+  height: 53px;
+  margin: auto;
+  margin-top: 4px;
+  border-radius: 50%;
+  /*text-align: center;
+ color: white;
   width: 80px;
   height: 35px;
-  font-size: 110%;
+  font-size: 110%;*/
   position: absolute;
 }
+
+
 
 #playAg {
   text-align: center;
