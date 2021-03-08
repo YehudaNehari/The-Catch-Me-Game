@@ -66,8 +66,11 @@ body {
   position: relative;
 }
 #click {
+ 
+  text-align: center;
   background-color: #fff;
   width: 80px;
+  height: 35px;
   font-size: 110%;
   position: absolute;
 }
@@ -125,19 +128,19 @@ td {
 .e .date {
   visibility: hidden;
   width: 100px;
-  height: 40px;
-  background-color: blanchedalmond;
-  color: black;
+  height: 20px;
+  background-color: black;
+  color: white;
   text-align: center;
   border-radius: 1px;
-  padding: 5px 0;
+ /* padding: 5px 0;*/
 
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  bottom: 100%;
+  bottom: 110%;
   top: -5px;
-  left: 105%;
+  left: 110%;
 }
 
 .e:hover .date {

@@ -1,9 +1,9 @@
-var second = 10;
+var second = 60;
 var interval = 0;
 var stopTimer = false;
 var clickStart = false;
 var enableClick = true; // if over 60 sec the click will stop.
-var fastDiv = 300; // control the div speed
+var fastDiv = 500; // control the div speed
 var scoreToH = 0;
 const clickDiv = document.getElementById("click");
 const playagain = document.getElementById("playAg");
@@ -57,6 +57,7 @@ function catch_click() {
     if (level == 5) {
       alert(yourName + ",  you won!\nyour score is:  " + scoreToH);
       scoreToH = 0;
+      stopTimer = true;
       clickStart = false;
     }
   }
@@ -105,7 +106,7 @@ function timer() {
         enableClick = false;
         clickStart = false;
         playagain.style.display = "block";
-        second = 10;
+        second = 60;
         level = 1;
         scoreToH = 0;
         time_html.innerHTML = second;
